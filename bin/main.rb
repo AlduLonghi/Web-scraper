@@ -1,5 +1,4 @@
-require 'open-uri'
-require 'nokogiri'
+#!/usr/bin/env ruby
 require_relative '../lib/scrap_logic'
 
 class ScrapUI
