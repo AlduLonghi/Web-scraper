@@ -1,14 +1,13 @@
 require 'open-uri'
 require 'nokogiri'
+require_relative '../lib/scrap_logic'
 
+class ScrapUI
+  def initialize
+    puts 'Please, enter the url you want to scrap from: '
+    url = gets.chomp
+    ScrapLogic.new(url)
+  end
+end
 
-
-
-puts "please enter the url"
-url = gets.chomp()
-i = 20
-page = "&page=#{i}#"
-doc = Nokogiri::HTML(open(url))
-result_card = doc.css('div.card-content')
-error = doc.at('p:contains("lalala.")')
-p url + page
+ScrapUI.new
