@@ -30,7 +30,7 @@ class Display
   end
 
   def create_file
-    file = File.open(@file_n + '.txt', 'w')
+    file = File.open("#{@file_n}.txt", 'w')
     file.puts @table
     file.close
   end
