@@ -1,0 +1,75 @@
++------------------------------------------------------------------------------------+--------------------------------+-------+-------+
+| Name                                                                               | Author                         | Score | Price |
++------------------------------------------------------------------------------------+--------------------------------+-------+-------+
+| Complete Web Design Course HTML CSS JavaScript jQuery Bootstrap                    | Laurence Svekis                |  5.0  | $9.9  |
+| Cool CSS Tricks for Beginners: Essential Tips on How to Use CSS Code               | John Bura                      |  4.4  | $4.9  |
+| Learn CSS Basics and Start Making Attractive Websites                              | Shakzee Arain                  |  5.0  | $9.9  |
+| CSS Animation Tutorial: Bring Interactivity into Your UI/UX                        | Jazeb Akram                    |  5.0  | $75.  |
+| How to Create a Website Using HTML and CSS: Beginner’s Choice!                     | Abd Alwahab Abdullah           |  5.0  | $9.0  |
+| Introducing Coding for Beginners: an HTML and CSS Online Course                    | BitDegree Foundation VSI ©     |  5.0  | Free  |
+| CSS Image Filters - Adding Visual Effects To Images (2020)                         | Rahul Giri                     |  5.0  | $9.0  |
+| Element Locators: 60 Minutes Crash Course for CSS & Xpath                          | Nitin Tyagi                    |  5.0  | $7.0  |
+| How to Code a Website: Learn HTML and CSS                                          | Shakzee Arain                  |  2.0  | $9.9  |
+| Create Your Own Simple JavaScript Calculator using JS, HTML and CSS                | Hemendar Singh Rajpurohit      |  5.0  | $19.  |
+| Solid foundational HTML, CSS, JavaScript course                                    | Tatiana Minina                 |  4.2  | Free  |
+| Introduction to Programming Course: Learn HTML, CSS, Python & More                 | LearnToProgram                 |  4.8  | $10.  |
+| CSS Positions For Beginners                                                        | Norhan Khafaga                 |  5.0  | $9.0  |
+| Coding for Kids - Introduction to HTML, CSS, and JavaScript!                       | Mammoth Interactive            |  3.7  | $9.9  |
+| The Must-See Sass Tutorial for Any Front-End Whiz                                  | LearnToProgram                 |  5.0  | $11.  |
+| JavaScript Training for Beginners: Learn About JavaScript & jQuery                 | Shakzee Arain                  |  5.0  | $9.9  |
+| Learn Bootstrap to Make Responsive Websites with Ease                              | Shakzee Arain                  |  5.0  | $9.9  |
+| Web Development Training: Start Your Career as a Front End Developer               | Srinivas Vanamala              |  5.0  | $14.  |
+| Comprehensive Full Stack Web Development Course for Beginners                      | Devslopes by Mark Price        |  4.5  | $9.9  |
+| Practice Oriented HTML Crash Course: Learn HTML from the Ground Up                 | Kalob Taulien                  |  5.0  | $9.9  |
+| Dreamweaver Tutorial for Beginners: Introduction to Web Design                     | LearnToProgram                 |  4.4  | Free  |
+| Bootstrap 4 Tutorial: Easily Learn How to Use Bootstrap 4 Like a Pro               | Mohamed Hichem Medjdoub        |  5.0  | $9.9  |
+| JavaScript Tutorial: Learn JavaScript Just in 1 Hour                               | John Bura                      |  4.3  | $4.9  |
+| Bootstrap Tutorial: Learn to Create Dynamic Websites In a Pinch                    | BitDegree Foundation VSI ©     |  4.2  | $9.9  |
+| Learn jQuery - From Beginner to Advanced                                           | Sandip Bhattacharya            |  5.0  | $9.9  |
+| SVG Tutorial for Beginners: Learn How to Use SVG                                   | Mammoth Interactive            |  5.0  | $13.  |
+| React Tutorial: The Ultimate Guide                                                 | Mammoth Interactive            |  1.0  | $21.  |
+| Python Flask Tutorial For Beginners: Build Stunning Websites from Scratch          | Mammoth Interactive            |  5.0  | $9.9  |
+| A Comprehensive D3.js Tutorial: Create Data Visualization with D3.js               | Mammoth Interactive            |  5.0  | $15.  |
+| Learn Node.js web development getting a full stack of the best tools               | Eldor Togaymurotov             |  5.0  | $9.9  |
+| The Complete Front-End Web Development Course!                                     | Joseph Delgadillo              |  5.0  | $9.9  |
+| Brackets Editor Tools and Resources for web developers                             | Laurence Svekis                |  5.0  | Free  |
+| A Responsive Web Design Course: Find Out How to Create a Responsive Website        | BitDegree Foundation VSI ©     |  4.6  | $9.9  |
+| Create a React App: React JS Tutorial and Flux Web Dev                             | Devslopes by Mark Price        |  4.7  | $4.9  |
+| Learning PHP from Scratch: Start Your Career as a Back-End Developer               | Srinivas Vanamala              |  5.0  | $14.  |
+| Bootstrap 4 Quick Website Bootstrap Components 2020 Course                         | Laurence Svekis                |  4.8  | Free  |
+| HTML Coding For Beginners Course: Learn HTML in 1 Hour                             | John Bura                      |  4.3  | $2.9  |
+| Become a PHP Specialist: Up to Date Video PHP Tutorial                             | LearnToProgram                 |  4.3  | $4.9  |
+| Learn Ruby on Rails and Find Out How to Make Web Applications Quickly              | LearnToProgram                 |  4.7  | $4.9  |
+| Comprehensive HTML5 Tutorial For Beginners: Become Advanced HTML5 Specialist       | LearnToProgram                 |  4.5  | $4.9  |
+| Complete PhoneGap Tutorial: Learn How to Create Mobile Apps                        | LearnToProgram                 |  4.6  | $4.9  |
+| PHP: Object Oriented PHP and MySQL with PDO for beginners + Project                | Macjoe Umanah                  |  3.7  | $15.  |
+| Learn Blockchain Development: Convert App to Dapp                                  | Masnad Nehith                  |  3.5  | $13.  |
+| Absolute Guide: Linux Tutorial for Beginners                                       | Jason Cannon                   |  4.5  | Free  |
+| The Complete Course on Learning How to Use jQuery and AngularJS                    | Shakzee Arain                  |  5.0  | $9.9  |
+| E-commerce Website Development Tutorial: Codeigniter E-Commerce System             | Shakzee Arain                  |  5.0  | $9.9  |
+| How to Perform CRUD Operations in CodeIgniter 3                                    | Shakzee Arain                  |  5.0  | $9.9  |
+| Start Learning CodeIgniter: From the Basics to Creation of Websites                | Shakzee Arain                  |  5.0  | $9.9  |
+| Learning Web Development from Scratch: The Ultimate Bootcamp                       | DEVELOPMENT ISLAND             |  4.2  | $9.9  |
+| Elm Language: Learn Elm Programming & Expand Your Opportunities!                   | Mammoth Interactive            |  5.0  | $9.9  |
+| ES6 Tutorial for Beginners: From the Basics to Advanced                            | Mammoth Interactive            |  5.0  | $9.9  |
+| JavaScript Beginner Project: How to Make a Web App with JavaScript                 | Ahmed Ibrahim                  |  5.0  | $9.9  |
+| SharePoint Tutorial for Beginners                                                  | Thangeswari Navaneethakrishnan |  5.0  | $9.9  |
+| Web Application Development Tutorial: .NET Course For Beginners                    | Ion Cosmin Grigore             |  5.0  | $15.  |
+| Selenium Tutorial: Learn to Build an Automation Framework with Python              | Let's Kode It Kode It          |  5.0  | $17.  |
+| Advanced JavaScript Course: Working with JavaScript Libraries                      | Shay Tavor                     |  5.0  | $9.9  |
+| Practical PHP MySQL Course: Learn by Completing 5 Projects                         | Jazeb Akram                    |  3.7  | $210  |
+| Learn How to Build a website from scratch with HTML5 and CSS3                      | Jazeb Akram                    |  5.0  | $70.  |
+| Build a  secure PHP login page with email activation for any website               | Jazeb Akram                    |  5.0  | $60.  |
+| How to Use Sublime Text 3 Like a Pro: Sublime Text Tutorial                        | Rana Shahzad Ahmad Khan        |  5.0  | $9.9  |
+| Simple JavaScript Projects For Beginners: Get Excellent Skills On The Fly!         | Jazeb Akram                    |  5.0  | $80.  |
+| React-Redux Tutorial for Beginners: Installation, Basics and More!                 | Mammoth Interactive            |  5.0  | $21.  |
+| How to Build an App: Create Messenger App in 1 Day                                 | Eldor Togaymurotov             |  5.0  | $4.9  |
+| A Complete Python Flask Tutorial on Main Principles and Making Your First Web Apps | Frank Anemaet                  |  5.0  | $9.9  |
+| The Ultimate Razor Pages and Blazor Tutorial: Using C# for Front-End               | Taurius Litvinavicius          |  5.0  | $14.  |
+| Learn WordPress Development to Create Custom Themes For Yourself and Your Clients! | LearnToProgram                 |  4.2  | $10.  |
+| Node JS Website Tutorial on Building a Website from Scratch                        | Eldor Togaymurotov             |  5.0  | $4.9  |
+| Wordpress 2020: Create a professional webshop in wordpress step by step            | Ronak Parmar                   |  5.0  | $9.0  |
+| Secure Coding on Frontend: Best Practices                                          | Digest Academy                 |  4.4  | $7.9  |
+| Create a Twitter Social Network Clone - PHP JavaScript MySQL                       | Aizaz Dinho                    |  5.0  | $10.  |
+| Chrome DevTools Introduction 2020 Web Developers Guide                             | Laurence Svekis                |  4.9  | Free  |
++------------------------------------------------------------------------------------+--------------------------------+-------+-------+

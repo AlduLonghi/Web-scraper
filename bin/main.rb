@@ -26,7 +26,7 @@ class ScrapUI
     puts Messages::FILE_NAME
     loop do
       file_n = gets.chomp
-      if file_n == nil
+      if file_n.empty?
         puts Messages::INVALID_FILE_NAME
         next
       else
