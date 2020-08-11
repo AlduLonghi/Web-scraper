@@ -20,6 +20,8 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
     ruby-progressbar (1.10.1)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
 
 PLATFORMS
@@ -28,6 +30,7 @@ PLATFORMS
 DEPENDENCIES
   nokogiri
   rubocop (~> 0.81.0)
+  terminal-table
 
 BUNDLED WITH
    2.1.4

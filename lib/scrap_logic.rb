@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require_relative '../lib/practice'
 
 class ScrapLogic
   def initialize(url)
@@ -20,17 +21,17 @@ class ScrapLogic
       i += 1
     end
 
-    p @item_arr[2]
+    Table.new(@item_arr)
   end
 
   def storing_data
     @result_item.each do |result|
-      @item = {
-        title: result.css('h5').text,
-        author: result.css('span.course-author').text,
-        score: result.css('span.score').text,
-        price: result.css('div.price' || 'span.course-price--free').text
-      }
+      @item = [
+        result.css('h5').text,
+        result.css('span.course-author').text,
+        result.css('span.score').text,
+        result.css('div.price').text.gsub!(/\s+/, "").slice!(0..3)
+    ]
       @item_arr << @item
     end
     
