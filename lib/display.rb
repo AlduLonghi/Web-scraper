@@ -1,34 +1,36 @@
 require 'terminal-table'
 
 class Table
-    def initialize(arr, file_n)
-      @arr = arr
-      @file_n = file_n
-      i = 0
-    
-      @table = Terminal::Table.new(
-        row: [],
+  def initialize(arr, file_n)
+    @arr = arr
+    @file_n = file_n
+    output_of_data
+    create_file
+  end
 
-        headings: [
-          'Name',
-          'Author',
-          'Score',
-          'Price'
-        ]
-       )
+  def output_of_data
+    i = 0
+    @table = Terminal::Table.new(
+      row: [],
 
-      @arr.length.times do
-        @table.add_row(@arr[i])
-        i += 1
-      end
-      puts ''
-      puts @table
-      puts ''
-      create_file
-end
+      headings: [
+        'Name',
+        'Author',
+        'Score',
+        'Price'
+      ]
+    )
+    @arr.length.times do
+      @table.add_row(@arr[i])
+      i += 1
+    end
+    puts ''
+    puts @table
+    puts ''
+  end
 
   def create_file
-    file = File.open(@file_n + '.txt', "w")
+    file = File.open( @file_n + '.txt', "w")
     file.puts @table
     file.close
   end

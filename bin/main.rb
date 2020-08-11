@@ -1,31 +1,33 @@
 #!/usr/bin/env ruby
 require_relative '../lib/scrap_logic'
+require_relative '../lib/messages'
 
 class ScrapUI
+  include Messages 
   def initialize
     link
   end
 
   def link
-    puts 'Please, enter the url you want to scrap from: '
+    puts Messages::LINK_MG
     loop do 
       @url = gets.chomp
       if @url.include? 'https://www.bitdegree.org/search?'
         file_name
         break
       else 
-        puts "You have entered an invalid link. Please try again"
+        puts Messages::INVALID_LINK
         next
       end
     end
   end
 
   def file_name
-    puts 'Please, enter the name of the file which stores the info (e.g. \'ruby-data\'): '
+    puts Messages::FILE_NAME
     loop do
       file_n = gets.chomp
       if file_n == nil
-        puts 'It seems you haven\'t entered any file name. Please, try again'
+        puts Messages::INVALID_FILE_NAME
         next
       else
         ScrapLogic.new(@url, file_n)
