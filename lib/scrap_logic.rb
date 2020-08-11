@@ -32,8 +32,9 @@ class ScrapLogic
       @item = [
         result.css('h5').text,
         result.css('span.course-author').text,
-        result.css('span.score').text,
-        result_price
+        result.css('span.score').text.gsub!(/\s+/, ''),
+        result_price,
+        result.css('a').attribute('href').value
       ]
       @item_arr << @item
     end

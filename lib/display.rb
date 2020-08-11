@@ -18,15 +18,19 @@ class Display
         Author
         Score
         Price
+        Link
       ]
     )
     @arr.length.times do
       @table.add_row(@arr[i])
+      puts ''
+      puts 'Order: title, author, score, price, link\n'
+      puts "#{i + 1}"
+      puts @arr[i]
+      puts ''
       i += 1
     end
-    puts ''
-    puts @table
-    puts ''
+    
   end
 
   def create_file
