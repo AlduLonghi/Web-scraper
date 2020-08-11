@@ -1,6 +1,6 @@
 require 'terminal-table'
 
-class Table
+class Display
   def initialize(arr, file_n)
     @arr = arr
     @file_n = file_n
@@ -13,11 +13,11 @@ class Table
     @table = Terminal::Table.new(
       row: [],
 
-      headings: [
-        'Name',
-        'Author',
-        'Score',
-        'Price'
+      headings: %w[
+        Name
+        Author
+        Score
+        Price
       ]
     )
     @arr.length.times do
@@ -30,10 +30,8 @@ class Table
   end
 
   def create_file
-    file = File.open( @file_n + '.txt', "w")
+    file = File.open(@file_n + '.txt', 'w')
     file.puts @table
     file.close
   end
-
 end
-
