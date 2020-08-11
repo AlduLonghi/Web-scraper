@@ -1,8 +1,9 @@
 require 'terminal-table'
 
 class Table
-    def initialize(arr)
+    def initialize(arr, file_n)
       @arr = arr
+      @file_n = file_n
       i = 0
     
       @table = Terminal::Table.new(
@@ -27,7 +28,7 @@ class Table
 end
 
   def create_file
-    file = File.open("file.txt", "w")
+    file = File.open(@file_n + '.txt', "w")
     file.puts @table
     file.close
   end
