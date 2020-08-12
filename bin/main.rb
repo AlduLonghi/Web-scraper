@@ -1,26 +1,27 @@
 #!/usr/bin/env ruby
 require_relative '../lib/scrap_logic'
 require_relative '../lib/messages'
+require_relative '../lib/display'
 
 class ScrapUI
   include Messages
   def initialize
     Messages.welcome
-    link
+    link_input
+    file_name
+    scrap = ScrapLogic.new(@url)
+    scrap_data = scrap.item_arr
+    Display.new(scrap_data, @file_n) unless scrap_data.empty?
   end
 
-  def link
+  def link_input
     puts Messages::LINK_MG
     loop do
       @url = gets.chomp
-      if @url.include? 'https://www.bitdegree.org/search?'
-        file_name
-        break
-      else
-        puts ''
-        puts Messages::INVALID_LINK
-        next
-      end
+      break if @url.include? 'https://www.bitdegree.org/search?'
+
+      puts ''
+      puts Messages::INVALID_LINK
     end
   end
 
@@ -28,15 +29,11 @@ class ScrapUI
     puts ''
     puts Messages::FILE_NAME
     loop do
-      file_n = gets.chomp
-      if file_n.empty?
-        puts ''
-        puts Messages::INVALID_FILE_NAME
-        next
-      else
-        ScrapLogic.new(@url, file_n)
-        break
-      end
+      @file_n = gets.chomp
+      break unless @file_n.empty?
+
+      puts ''
+      puts Messages::INVALID_FILE_NAME
     end
   end
 end

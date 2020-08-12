@@ -1,28 +1,26 @@
 # rubocop:disable Security/Open
 require 'open-uri'
 require 'nokogiri'
-require_relative '../lib/display'
 
 class ScrapLogic
-  def initialize(url, file_n)
+  attr_reader :item_arr, :no_results, :i
+  def initialize(url)
     @url = url
-    @file_n = file_n
     looping_through
   end
 
   def looping_through
-    i = 1
+    @i = 1
     @item_arr = []
     loop do
-      @doc = Nokogiri::HTML(open(@url + "&page=#{i}#"))
+      @doc = Nokogiri::HTML(open(@url + "&page=#{@i}#"))
       @result_item = @doc.css('div.card.course-card')
       @no_results = @doc.at('p:contains("Sorry, no courses matched your criteria.")')
-      break if link_checker(@no_results, @doc, i) == false
+      break if link_checker(@no_results, @i) == false
 
       storing_data
-      i += 1
+      @i += 1
     end
-    Display.new(@item_arr, @file_n)
   end
 
   def storing_data
@@ -40,10 +38,11 @@ class ScrapLogic
     end
   end
 
-  def link_checker(no_results, _doc, ind)
+  def link_checker(no_results, ind)
     if !no_results.nil? && ind == 1
       puts ''
       puts Messages::NO_RESULTS
+      puts ''
       false
     elsif !no_results.nil?
       false

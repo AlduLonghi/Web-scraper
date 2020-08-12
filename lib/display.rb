@@ -1,5 +1,3 @@
-require 'terminal-table'
-
 class Display
   def initialize(arr, file_n)
     @arr = arr
@@ -14,7 +12,7 @@ class Display
       row: [],
 
       headings: %w[
-        Name
+        Title
         Author
         Score
         Price
@@ -24,13 +22,11 @@ class Display
     @arr.length.times do
       @table.add_row(@arr[i])
       puts ''
-      puts 'Order: title, author, score, price, link\n'
-      puts "#{i + 1}"
+      puts "#{i + 1}."
       puts @arr[i]
       puts ''
       i += 1
     end
-    
   end
 
   def create_file
