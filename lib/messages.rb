@@ -19,5 +19,5 @@ module Messages
 
   NO_RESULTS = 'It seems your page has no results!'.freeze
 
-  FILE_READY = 'Your file is ready and stored in this directory.'
+  FILE_READY = 'Your file is ready and stored in this directory.'.freeze
 end

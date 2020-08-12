@@ -15,13 +15,7 @@ class Display
     @table = Terminal::Table.new(
       row: [],
 
-      headings: %w[
-        Title
-        Author
-        Score
-        Price
-        Link
-      ]
+      headings: %w[Title Author Score Price Link]
     )
     @arr.length.times do
       @table.add_row(@arr[i])
