@@ -1,17 +1,17 @@
 #!/usr/bin/env ruby
-require_relative '../lib/scrap_logic'
+require_relative '../lib/scrape_logic'
 require_relative '../lib/messages'
 require_relative '../lib/display'
 
-class ScrapUI
+class ScrapeUI
   include Messages
   def initialize
     Messages.welcome
     link_input
     file_name
-    scrap = ScrapLogic.new(@url)
-    scrap_data = scrap.item_arr
-    Display.new(scrap_data, @file_n) unless scrap_data.empty?
+    scrape = ScrapeLogic.new(@url)
+    scrape_data = scrape.item_arr
+    Display.new(scrape_data, @file_n) unless scrape_data.empty?
   end
 
   def link_input
@@ -38,4 +38,4 @@ class ScrapUI
   end
 end
 
-ScrapUI.new
+ScrapeUI.new

@@ -2,7 +2,7 @@
 require 'open-uri'
 require 'nokogiri'
 
-class ScrapLogic
+class ScrapeLogic
   attr_reader :item_arr, :no_results, :i
   def initialize(url)
     @url = url
