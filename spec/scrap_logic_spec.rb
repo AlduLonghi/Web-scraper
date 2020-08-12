@@ -1,6 +1,5 @@
 require_relative '../lib/scrap_logic'
 require_relative '../lib/messages'
-require 'nokogiri'
 
 describe ScrapLogic do
   let(:empty_link) { 'https://www.bitdegree.org/search?q=asdfghjkl&src=ukw' }

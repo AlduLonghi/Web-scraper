@@ -1,4 +1,8 @@
+require 'terminal-table'
+require_relative 'messages.rb'
+
 class Display
+  include Messages
   def initialize(arr, file_n)
     @arr = arr
     @file_n = file_n
@@ -24,6 +28,8 @@ class Display
       puts ''
       puts "#{i + 1}."
       puts @arr[i]
+      puts ''
+      puts Messages::FILE_READY
       puts ''
       i += 1
     end

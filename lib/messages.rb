@@ -18,4 +18,6 @@ module Messages
   INVALID_FILE_NAME = 'It seems you haven\'t entered any file name. Please, try again.'.freeze
 
   NO_RESULTS = 'It seems your page has no results!'.freeze
+
+  FILE_READY = 'Your file is ready and stored in this directory.'
 end
