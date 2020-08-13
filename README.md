@@ -14,7 +14,7 @@ Web scraping, also known as web data extraction, is the process of retrieving or
 
 ## What does this Web scraper do? 
 
-This a Web scraper specially built for collecting data from BitDegree's search page. The user will input the link from which he wants to scrap the information from and the program returns a file with the results.
+This a Web scraper specially built for collecting data from BitDegree's search page. The user will input a search keyword(s) of what he would like to look for on the BitDegree site (e.g 'ruby courses'), and the program will return a file with the collected data.
 
 ![screenshot](./readme-media/file-screenshot.jpg)
 
@@ -80,7 +80,6 @@ This a Web scraper specially built for collecting data from BitDegree's search p
 
 4. Once the program stops running you will see the output on the terminal with the collected info and you will have a file in the root directory containing all the info organized in a table.
 
-![explanatory-gif](./readme-media/video-gif.gif)
 
 ## Author 
 
