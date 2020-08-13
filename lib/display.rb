@@ -9,9 +9,9 @@ class Display
     output_of_data
     create_file
   end
-  
+
   private
-  
+
   def output_of_data
     i = 0
     @table = Terminal::Table.new(
