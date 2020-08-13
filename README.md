@@ -44,11 +44,13 @@ This a Web scraper specially built for collecting data from BitDegree's search p
 
 2. Run the following commands:
 
-- git clone https://github.com/AlduLonghi/Web-scraper.git
+- $ git clone https://github.com/AlduLonghi/Web-scraper.git
 
-- cd Web-scraper
+- $ cd Web-scraper
 
-- bin/main.rb
+- $ bundle install
+
+- $ bin/main.rb
 
 3. Follow the instructions.
 
@@ -70,19 +72,13 @@ This a Web scraper specially built for collecting data from BitDegree's search p
 
 ### Running instructions
 
-1. Go to [BitDegree](https://www.bitdegree.org/)
+1. Run the program.
 
-2. Search for something using the search bar (e.g. 'ruby').
+2. When the program asks you for your search keyword, you will input something you'd like to look for on the BitDegree site. For example: 'marketing courses', 'ruby', 'html'.
 
-3. Copy the link of the first page of the results.
+3. When the program asks you for the name file you can choose whatever you want (e.g. 'ruby-data'). This will be the name of the file storing the collected data.
 
-4. Run the program.
-
-5. When the program asks you for the link you will paste the link above mentioned.
-
-6. When the program asks you for the name file you should choose whatever you want (e.g. 'ruby-data')
-
-7. Once the program stops running you will see the output on the terminal with the collected info and you will have a file in the root directory containing all the info organized in a table.
+4. Once the program stops running you will see the output on the terminal with the collected info and you will have a file in the root directory containing all the info organized in a table.
 
 ![explanatory-gif](./readme-media/video-gif.gif)
 

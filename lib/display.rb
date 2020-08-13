@@ -3,6 +3,9 @@ require_relative 'messages.rb'
 
 class Display
   include Messages
+
+  private
+
   def initialize(arr, file_n)
     @arr = arr
     @file_n = file_n
