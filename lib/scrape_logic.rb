@@ -6,10 +6,7 @@ class ScrapeLogic
 
   def initialize(search_key)
     @search_key = search_key.gsub(/\s+/, '+')
-    looping_through
   end
-
-  private
 
   def looping_through
     @i = 1
@@ -24,6 +21,8 @@ class ScrapeLogic
       @i += 1
     end
   end
+
+  private
 
   def storing_data
     @result_item.each do |result|
