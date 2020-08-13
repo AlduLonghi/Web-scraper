@@ -1,7 +1,7 @@
-require_relative '../lib/scrap_logic'
+require_relative '../lib/scrape_logic'
 require_relative '../lib/messages'
 
-describe ScrapLogic do
+describe ScrapeLogic do
   let(:empty_link) { 'https://www.bitdegree.org/search?q=asdfghjkl&src=ukw' }
   let(:last_page) { 'https://www.bitdegree.org/search?q=ruby&src=ukw' }
   let(:results_page) { 'https://www.bitdegree.org/search?q=ruby&src=ukw' }

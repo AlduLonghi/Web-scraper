@@ -4,8 +4,11 @@ require 'nokogiri'
 
 class ScrapeLogic
   attr_reader :item_arr, :no_results, :i
-  def initialize(url)
-    @url = url
+
+  private
+  
+  def initialize(search_key)
+    @search_key = search_key
     looping_through
   end
 
@@ -13,10 +16,10 @@ class ScrapeLogic
     @i = 1
     @item_arr = []
     loop do
-      @doc = Nokogiri::HTML(open(@url + "&page=#{@i}#"))
+      @doc = Nokogiri::HTML(open("https://www.bitdegree.org/search?q=#{@search_key}&src=ukw&page=#{@i}#"))
       @result_item = @doc.css('div.card.course-card')
       @no_results = @doc.at('p:contains("Sorry, no courses matched your criteria.")')
-      break if link_checker(@no_results, @i) == false
+      break if link_checker?(@no_results, @i) == false
 
       storing_data
       @i += 1
@@ -38,7 +41,7 @@ class ScrapeLogic
     end
   end
 
-  def link_checker(no_results, ind)
+  def link_checker?(no_results, ind)
     if !no_results.nil? && ind == 1
       puts ''
       puts Messages::NO_RESULTS
