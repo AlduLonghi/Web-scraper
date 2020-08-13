@@ -4,12 +4,12 @@ require 'nokogiri'
 class ScrapeLogic
   attr_reader :item_arr, :no_results, :i
 
-  private
-
   def initialize(search_key)
     @search_key = search_key.gsub(/\s+/, '+')
     looping_through
   end
+
+  private
 
   def looping_through
     @i = 1
