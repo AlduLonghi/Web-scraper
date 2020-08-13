@@ -1,4 +1,3 @@
-# rubocop:disable Security/Open
 require 'open-uri'
 require 'nokogiri'
 
@@ -6,7 +5,7 @@ class ScrapeLogic
   attr_reader :item_arr, :no_results, :i
 
   private
-  
+
   def initialize(search_key)
     @search_key = search_key.gsub(/\s+/, '+')
     looping_through
@@ -16,7 +15,7 @@ class ScrapeLogic
     @i = 1
     @item_arr = []
     loop do
-      @doc = Nokogiri::HTML(open("https://www.bitdegree.org/search?q=#{@search_key}&src=ukw&page=#{@i}#"))
+      @doc = Nokogiri::HTML(URI.parse("https://www.bitdegree.org/search?q=#{@search_key}&src=ukw&page=#{@i}#").open)
       @result_item = @doc.css('div.card.course-card')
       @no_results = @doc.at('p:contains("Sorry, no courses matched your criteria.")')
       break if link_checker?(@no_results, @i) == false
@@ -49,5 +48,3 @@ class ScrapeLogic
     end
   end
 end
-
-# rubocop:enable Security/Open
