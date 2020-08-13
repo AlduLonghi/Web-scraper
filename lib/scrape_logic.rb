@@ -2,8 +2,6 @@ require 'open-uri'
 require 'nokogiri'
 
 class ScrapeLogic
-  attr_writer :doc
-
   def initialize(search_key)
     @search_key = search_key.gsub(/\s+/, '+')
   end

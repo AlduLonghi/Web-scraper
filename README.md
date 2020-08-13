@@ -66,7 +66,11 @@ This a Web scraper specially built for collecting data from BitDegree's search p
 
 5. Right click on the folder, press "Open in terminal".
 
-6. Run $ bin/main.rb
+6. Run:
+
+- $ bundle install
+
+- $ bin/main.rb
 
 7. Follow the instructions.
 
@@ -79,6 +83,8 @@ This a Web scraper specially built for collecting data from BitDegree's search p
 3. When the program asks you for the name file you can choose whatever you want (e.g. 'ruby-data'). This will be the name of the file storing the collected data.
 
 4. Once the program stops running you will see the output on the terminal with the collected info and you will have a file in the root directory containing all the info organized in a table.
+
+![explanatory_gif](./readme-media/video.gif)
 
 
 ## Author 

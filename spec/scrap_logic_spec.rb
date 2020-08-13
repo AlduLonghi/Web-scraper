@@ -2,7 +2,7 @@ require_relative '../lib/scrape_logic'
 require_relative '../lib/messages'
 
 describe ScrapeLogic do
-  let(:scrape) { ScrapeLogic.new('ruby') }
+  let(:scrape_results) { ScrapeLogic.new('ruby') }
   let(:arr) do
     [['Learn Ruby on Rails and Find Out How to Make Web Applications Quickly', 'LearnToProgram', '4.7', '$4.9',
       'https://www.bitdegree.org/course/learn-ruby-on-rails'],
@@ -28,7 +28,16 @@ describe ScrapeLogic do
 
   describe '#looping_through' do
     it 'returns an array with the collected data if the page throws results' do
-      expect(scrape.looping_through).to eql(arr)
+      expect(scrape_results.looping_through).to eql(arr)
+    end
+
+    it 'returns an empty value if the page does not throw any results' do
+      scrape = ScrapeLogic.new('asddgdh')
+      expect(scrape.looping_through).to eql('')
+    end
+
+    it 'does not return an empty value if the page throws results' do
+      expect(scrape_results.looping_through).not_to eql('')
     end
   end
 end
