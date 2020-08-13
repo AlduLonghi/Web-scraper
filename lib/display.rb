@@ -19,12 +19,6 @@ class Display
     )
     @arr.length.times do
       @table.add_row(@arr[i])
-      puts ''
-      puts "#{i + 1}."
-      puts @arr[i]
-      puts ''
-      puts Messages::FILE_READY
-      puts ''
       i += 1
     end
   end

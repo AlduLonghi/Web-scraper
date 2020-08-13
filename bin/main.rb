@@ -10,7 +10,12 @@ require_relative '../lib/display'
     file_n = file_name
     scrape = ScrapeLogic.new(key)
     scrape_data = scrape.item_arr
-    Display.new(scrape_data, file_n) unless scrape_data.empty?
+    if scrape_data.empty?
+      Messages.no_result
+    else
+      Messages.file_ready(scrape_data)
+      Display.new(scrape_data, file_n)
+    end
   end
 
   def search_key_input

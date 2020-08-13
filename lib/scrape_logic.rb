@@ -8,7 +8,7 @@ class ScrapeLogic
   private
   
   def initialize(search_key)
-    @search_key = search_key
+    @search_key = search_key.gsub(/\s+/, '+')
     looping_through
   end
 
@@ -43,9 +43,6 @@ class ScrapeLogic
 
   def link_checker?(no_results, ind)
     if !no_results.nil? && ind == 1
-      puts ''
-      puts Messages::NO_RESULTS
-      puts ''
       false
     elsif !no_results.nil?
       false

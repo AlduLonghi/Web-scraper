@@ -9,15 +9,29 @@ module Messages
     puts ''
   end
 
-  LINK_MG = 'Please, enter the url you want to scrap from: '.freeze
+  def self.no_results
+    puts ''
+    puts 'It seems your page has no results!'
+    puts ''
+  end
 
-  INVALID_LINK = 'You have entered an invalid link. Please try again.'.freeze
+  def self.file_ready(arr)
+    i = 0
+    arr.length.times do
+    puts ''
+    puts "#{i + 1}."
+    puts arr[i]
+    puts ''
+    puts 'Your file is ready and stored in this directory.'
+    puts ''
+    i += 1
+    end
+  end
+
+  LINK_MG = 'Please enter the keyword of what you would like to search '.freeze
 
   FILE_NAME = 'Please, enter the name of the file which stores the info (e.g. \'ruby-data\'): '.freeze
 
   INVALID_FILE_NAME = 'It seems you haven\'t entered any file name. Please, try again.'.freeze
 
-  NO_RESULTS = 'It seems your page has no results!'.freeze
-
-  FILE_READY = 'Your file is ready and stored in this directory.'.freeze
 end
