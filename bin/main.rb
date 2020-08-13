@@ -8,10 +8,9 @@ def scrape_performance
   key = search_key_input
   file_name = file_naming
   scrape = ScrapeLogic.new(key)
-  scrape.looping_through
-  scrape_data  = scrape.item_arr
+  scrape_data = scrape.looping_through
   if scrape_data.empty?
-    Messages.no_result
+    Messages.no_results
   else
     Messages.file_ready(scrape_data)
     Display.new(scrape_data, file_name)

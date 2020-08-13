@@ -2,24 +2,26 @@ require 'open-uri'
 require 'nokogiri'
 
 class ScrapeLogic
-  attr_reader :item_arr, :no_results, :i
+  attr_writer :doc
 
   def initialize(search_key)
     @search_key = search_key.gsub(/\s+/, '+')
   end
 
   def looping_through
-    @i = 1
+    i = 1
     @item_arr = []
+    data = ''
     loop do
-      @doc = Nokogiri::HTML(URI.parse("https://www.bitdegree.org/search?q=#{@search_key}&src=ukw&page=#{@i}#").open)
+      @doc = Nokogiri::HTML(URI.parse("https://www.bitdegree.org/search?q=#{@search_key}&src=ukw&page=#{i}#").open)
       @result_item = @doc.css('div.card.course-card')
-      @no_results = @doc.at('p:contains("Sorry, no courses matched your criteria.")')
-      break if link_checker?(@no_results, @i) == false
+      no_results = @doc.at('p:contains("Sorry, no courses matched your criteria.")')
+      break if link_checker?(no_results, i) == false
 
-      storing_data
-      @i += 1
+      data = storing_data
+      i += 1
     end
+    data
   end
 
   private
@@ -37,6 +39,7 @@ class ScrapeLogic
       ]
       @item_arr << @item
     end
+    @item_arr
   end
 
   def link_checker?(no_results, ind)
