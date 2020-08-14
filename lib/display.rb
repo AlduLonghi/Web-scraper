@@ -1,5 +1,4 @@
 require 'terminal-table'
-require_relative 'messages.rb'
 
 class Display
   include Messages
